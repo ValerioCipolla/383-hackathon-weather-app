@@ -1,8 +1,10 @@
-.dayBox{
+.DayBox{
     display:flex;
-    width: 20%;
-    height: 20%;
+    width: 20em;
+    height: 20em;
     background-color: #F2F05C;
+    text-align: center;
+    justify-content: center;
 
 }
 
