@@ -1,0 +1,22 @@
+.dayBox{
+    display:flex;
+    width: 20%;
+    height: 20%;
+    background-color: #F2F05C;
+
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: #F2F05C;
+    }
+  }
+
+/* -day box size of the box 
+Width (em), 
+Height (em)
+font: eg poppin
+background color: template
+color template: F2F05C, 75EEF0, 8AEEC5, CCEF76
+- media query */
+
