@@ -40,14 +40,6 @@ const DayBox = ({ coords }) => {
     getWeather()
   }, [lon, lat])
 
-  // async function getData() {
-  //   const response = await fetch(
-  //     "https://api.openweathermap.org/data/2.5/onecall?lat=50&lon=50&exclude={1}&appid=e9d3c70f90fe1862f93ba31a63e9a148"
-  //   )
-  //   const data = await response.json()
-  //   console.log(data)
-  // }
-
   return (
     <div className="DayBox">
       <div className="flexRow">
