@@ -3,6 +3,7 @@
 
 import React from "react"
 import { useEffect, useState } from "react"
+import "./style.css"
 // api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
 const DayBox = ({ coords }) => {
   const [city, setCity] = useState("")
@@ -26,7 +27,7 @@ const DayBox = ({ coords }) => {
   }, [lon, lat])
 
   return (
-    <div>
+    <div className="DayBox">
       <h1>City: {city}</h1>
       <h1>Weather: {weather}</h1>
       <h1>Temperature (C): {parseInt(temp - 273.15)}</h1>

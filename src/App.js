@@ -1,6 +1,4 @@
-import logo from "./logo.svg"
 import "./App.css"
-import InputField from "./components/InputField"
 import DayBox from "./components/DayBox"
 import { useState } from "react"
 
