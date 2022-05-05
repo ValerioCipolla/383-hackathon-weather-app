@@ -28,9 +28,10 @@ const DayBox = ({ coords }) => {
 
   return (
     <div className="DayBox">
-      <h1>City: {city}</h1>
-      <h1>Weather: {weather}</h1>
-      <h1>Temperature (C): {parseInt(temp - 273.15)}</h1>
+      <h1 className="IconCss">Icon</h1>
+      <p id="City">City: {city}</p>
+      <p id="Weather">Weather: {weather}</p>
+      <p id="Temperature">Temperature (C): {parseInt(temp - 273.15)}</p>
     </div>
   )
 }
