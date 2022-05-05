@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <form onSubmit={getCity}>
         <input onChange={handleChange} value={input}></input>
-        <button>Submit!</button>
+        <button>Go!</button>
       </form>
       <DayBox coords={coords} />
     </div>
