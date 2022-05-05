@@ -1,23 +1,78 @@
-/* .DayBox{
-    display:flex;
-    width: 20em;
-    height: 20em;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+.DayBox{
+    /* display:flex; */
+    position: relative;
     background-color: #F2F05C;
-    text-align: center;
+    width: 35%;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5%;
+}
+
+.icon{
+    font-size: 5rem;
+}
+
+
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+p, h2, h4 {
+    padding: 10px 20px
+}
+
+#Temperature {
+    position:absolute;
+    font-size: 1.5em;
+    bottom: 0.1em;
+    right: 1em;
+
+}
+
+#Weather {
+    position:absolute;
+    font-size: 1em;
+    top: 0.2em;
+    right: 1em;
+
+}
+
+#City {
+    position:absolute;
+    font-size: 1em;
+    top: 0.2em;
+    left: 1em;
 
 }
 
 @media screen and (max-width: 480px) {
     body {
+        display:flex; 
         background-color: #F2F05C;
-    }
-  } */
 
-/* -day box size of the box 
-Width (em), 
-Height (em)
+    }
+  }
+/* 
+	@@ -20,4 +57,12 @@ Height (em)
 font: eg poppin
 background color: template
 color template: F2F05C, 75EEF0, 8AEEC5, CCEF76
 - media query */
+
+/*
+where to put this?  Should nomrally be under head in html file
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+*/

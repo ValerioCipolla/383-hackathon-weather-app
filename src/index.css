@@ -1,0 +1,18 @@
+input {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.2rem;
+  background-color: black;
+  color: #F2F05C;
+  border: none;
+}
+
+button:hover {
+  background-color: #F2F05C;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}

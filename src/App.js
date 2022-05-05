@@ -28,7 +28,11 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={getCity}>
-        <input onChange={handleChange} value={input}></input>
+        <input
+          onChange={handleChange}
+          value={input}
+          placeholder="Type a city here"
+        ></input>
         <button>Go!</button>
       </form>
       <DayBox coords={coords} />

@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react"
-import { WiCloud, WiDaySunny, WiDayRain, WiDaySnow } from "react-icons/wi"
+import {
+  WiCloud,
+  WiDaySunny,
+  WiDayRain,
+  WiDaySnow,
+  WiDayLightning,
+} from "react-icons/wi"
+import "./icon.css"
 
 function Icon({ weather }) {
   const [test, setTest] = useState()
@@ -14,12 +21,14 @@ function Icon({ weather }) {
         return setTest(<WiDayRain />)
       case "Snow":
         return setTest(<WiDaySnow />)
+      case "Thunderstorm":
+        return setTest(<WiDayLightning />)
       default:
         return setTest(<WiCloud />)
     }
   }, [weather])
 
-  return <div>{test}</div>
+  return <div className="icon">{test}</div>
 }
 
 export default Icon

@@ -50,17 +50,23 @@ const DayBox = ({ coords }) => {
 
   return (
     <div className="DayBox">
-      <Icon weather={weather} />
-      <h1>City: {city}</h1>
-      <h1>
-        Weather: {weather} - {description}
-      </h1>
-      <h1>Temperature (C): {parseInt(temp - 273.15)}</h1>
-      <h1>Feels like: {parseInt(feelsLike - 273.15)}</h1>
-      <h1>Humidity: {humidity}%</h1>
-      <h1>Wind: {windSpeed} m/s</h1>
-      <h1>Today's sunrise: {sunrise}</h1>
-      <h1>Today's sunset: {sunset}</h1>
+      <div className="flexRow">
+        <h2>{city}</h2>
+        <Icon weather={weather} />
+      </div>
+      <div className="flexRow">
+        <h4>
+          {weather} - {description}
+        </h4>
+        <h4>{parseInt(temp - 273.15)}° C</h4>
+      </div>
+      <div className="flexCenter">
+        <p className="light">Feels like: {parseInt(feelsLike - 273.15)}° C</p>
+        <p className="dark">Humidity: {humidity}%</p>
+        <p classaName="light">Wind: {windSpeed} m/s</p>
+        <p className="dark">Today's sunrise: {sunrise}</p>
+        <p className="light">Today's sunset: {sunset}</p>
+      </div>
     </div>
   )
 }
