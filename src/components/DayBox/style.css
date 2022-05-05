@@ -5,6 +5,7 @@
     background-color: #F2F05C;
     text-align: center;
     justify-content: center;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -21,3 +22,11 @@ font: eg poppin
 background color: template
 color template: F2F05C, 75EEF0, 8AEEC5, CCEF76
 - media query */
+
+/*
+where to put this?  Should nomrally be under head in html file
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+*/
