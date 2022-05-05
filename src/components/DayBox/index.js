@@ -4,7 +4,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import "./style.css"
-import Icon from "./partials/icon/icon"
+import Icon from "./partials/icon/icon.js"
 
 // api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
 const DayBox = ({ coords }) => {
@@ -40,13 +40,13 @@ const DayBox = ({ coords }) => {
     getWeather()
   }, [lon, lat])
 
-  async function getData() {
-    const response = await fetch(
-      "https://api.openweathermap.org/data/2.5/onecall?lat=50&lon=50&exclude={1}&appid=e9d3c70f90fe1862f93ba31a63e9a148"
-    )
-    const data = await response.json()
-    console.log(data)
-  }
+  // async function getData() {
+  //   const response = await fetch(
+  //     "https://api.openweathermap.org/data/2.5/onecall?lat=50&lon=50&exclude={1}&appid=e9d3c70f90fe1862f93ba31a63e9a148"
+  //   )
+  //   const data = await response.json()
+  //   console.log(data)
+  // }
 
   return (
     <div className="DayBox">
